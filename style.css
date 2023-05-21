@@ -321,7 +321,6 @@ blockquote p {
   width: 134px;
   height: 50px;
   text-indent: -9999px;
-  /*background: url(images/MRP\ Logo\ 1.svg) no-repeat;*/
   background-size: 134px 50px;
 }
 
@@ -497,10 +496,11 @@ blockquote p {
 .parallax-section {
   z-index: -1;
   clear: both;
-  background-image: url('images/home.jpg');
+  background-image: url('images/parallax_test.jpg');
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center center;
+  background-size: cover;
 }
 
 .parallax2 {
