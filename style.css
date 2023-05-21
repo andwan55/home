@@ -1779,6 +1779,10 @@ footer p, footer a {
     width: 100%;
   }
 
+  .parallax-section {
+    height: 100vh;
+  }
+
   .parallax-section .wrap {
     padding: 0;
   }
