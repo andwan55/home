@@ -1621,6 +1621,10 @@ footer p, footer a {
     font-size: 1em;
     padding: 3px;
   }
+
+  .parallax-section {
+    background-image: url(images/parallax_test_mobile.jpg);
+  }
 }
 
 @media handheld, only screen and (max-width: 767px) {
@@ -1725,6 +1729,10 @@ footer p, footer a {
     padding: 145px 0;
   }
 
+  .parallax-section {
+    background-image: url(images/parallax_test_mobile.jpg);
+  }
+
   .parallax-section .content h2, .content-header h2  {
     font-size: 2em;
   }
@@ -1774,6 +1782,7 @@ footer p, footer a {
   #page-sidebar-no-sidebar .post-wrap {
     width: 100%;
   }
+
   .parallax-section {
     background-image: url(images/parallax_test_mobile.jpg);
   }
