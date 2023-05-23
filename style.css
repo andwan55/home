@@ -1774,13 +1774,12 @@ footer p, footer a {
   #page-sidebar-no-sidebar .post-wrap {
     width: 100%;
   }
+  .parallax-section {
+    background-image: url(images/parallax_test_mobile.jpg);
+  }
 
   .parallax-section .content p, .top-slider .content-header p {
     width: 100%;
-  }
-
-  .parallax-section {
-    height: 100vh;
   }
 
   .parallax-section .wrap {
