@@ -17,6 +17,11 @@ Grey #ECF0F1
 }
 
 @font-face {
+	font-family: Quicksand Bold;
+	src: url('fonts/Quicksand-Bold.ttf');
+}
+
+@font-face {
 	font-family: Futura Heavy Italic;
 	src: url('fonts/Futura\ Heavy\ Italic\ font.ttf');
 }
@@ -88,17 +93,22 @@ h1 {
 
 h2 {
   font-size: 2.8em;
-  line-height: .9em;
+  line-height: 1.2em;
 }
 
 h3 {
   font-size: 1.8em;
-  line-height: .9em;
+  line-height: 1.2em;
 }
 
 h4,h5,h6 {
   font-size: 1.125em;
   line-height: .5em;
+}
+
+.text-header{
+  font-family: 'Quicksand Bold';
+  font-size: 1.2em;
 }
 
 blockquote {
@@ -496,7 +506,7 @@ blockquote p {
 .parallax-section {
   z-index: -1;
   clear: both;
-  background-image: url('images/parallax_test.jpg');
+  background-image: url('images/Parallax\ Background.svg');
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -505,6 +515,26 @@ blockquote p {
 
 .parallax2 {
   background-image: url('images/parallax2.jpg');
+}
+
+.parallax-research-program {
+  background-image: url(images/Parallax\ Background\ Research\ Program.svg);
+}
+
+.parallax-ml-apps {
+  background-image: url(images/Parallax\ Background\ ML\ Apps.svg);
+}
+
+.parallax-data-structures {
+  background-image: url(images/Parallax\ Background\ Data\ Structures.svg);
+}
+
+.parallax-data-science {
+  background-image: url(images/Parallax\ Background\ Data\ Science.svg);
+}
+
+.parallax-python {
+  background-image: url(images/Parallax\ Background\ Python.svg);
 }
 
 .parallax-section .content, .top-slider .content-header, .home-slider {
@@ -895,6 +925,10 @@ blockquote p {
   color: #fff;
 }
 
+.entry-title {
+  line-height: 1.2em;
+}
+
 /* Blog Page & Single */
 
 .single {
@@ -924,6 +958,11 @@ blockquote p {
 .blog-grid .post-wrap .entry-title {
   font-size: 1.2em;
   margin-top: 1em;
+}
+
+.post-img img{
+  height: 100%;
+  object-fit: cover;
 }
 
 /* *********************************************************
@@ -1338,10 +1377,6 @@ footer {
   background:#2C2D31;
 }
 
-footer .grid {
-  padding-top: 6em;
-}
-
 footer h3 {
   color: #fff;
 }
@@ -1414,7 +1449,8 @@ footer p, footer a {
 }
 
 .copyright {
-  text-align: center;
+  text-align: right;
+  vertical-align: middle;
 }
 
 /*------------------------------------------------------------- 
@@ -1621,15 +1657,11 @@ footer p, footer a {
     font-size: 1em;
     padding: 3px;
   }
-
-  .parallax-section {
-    background-image: url(images/parallax_test_mobile.jpg);
-  }
 }
 
 @media handheld, only screen and (max-width: 767px) {
   #top-header {
-    position: absolute;
+    position: fixed;
     padding: 8px 0;
   }
 
@@ -1729,10 +1761,6 @@ footer p, footer a {
     padding: 145px 0;
   }
 
-  .parallax-section {
-    background-image: url(images/parallax_test_mobile.jpg);
-  }
-
   .parallax-section .content h2, .content-header h2  {
     font-size: 2em;
   }
@@ -1783,12 +1811,32 @@ footer p, footer a {
     width: 100%;
   }
 
-  .parallax-section {
-    background-image: url(images/parallax_test_mobile.jpg);
-  }
-
   .parallax-section .content p, .top-slider .content-header p {
     width: 100%;
+  }
+
+  .parallax-section {
+    background-image: url(images/Parallax\ Background\ Mobile.svg);
+  }
+
+  .parallax-research-program {
+    background-image: url(images/Parallax\ Background\ Research\ Program\ Mobile.svg);
+  }
+
+  .parallax-ml-apps {
+    background-image: url(images/Parallax\ Background\ ML\ Apps\ Mobile.svg);
+  }
+
+  .parallax-data-structures {
+    background-image: url(images/Parallax\ Background\ Data\ Structures\ Mobile.svg);
+  }
+
+  .parallax-data-science {
+    background-image: url(images/Parallax\ Background\ Data\ Science\ Mobile.svg);
+  }
+
+  .parallax-python {
+    background-image: url(images/Parallax\ Background\ Python\ Mobile.svg);
   }
 
   .parallax-section .wrap {
@@ -1813,5 +1861,31 @@ footer p, footer a {
   .team-social a i {
     font-size: 1.5em;
     padding: 8px;
+  }
+
+  .content h3 {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .content p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .entry-title {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .grid h3, .grid address{
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  footer .content{
+    display: flex;
+    align-items: center;
   }
 }
