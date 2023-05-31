@@ -1765,6 +1765,30 @@ footer p, footer a {
     font-size: 2em;
   }
 
+  .parallax-section {
+    background-image: url(images/Parallax\ Background\ Mobile.svg);
+  }
+
+  .parallax-research-program {
+    background-image: url(images/Parallax\ Background\ Research\ Program\ Mobile.svg);
+  }
+
+  .parallax-ml-apps {
+    background-image: url(images/Parallax\ Background\ ML\ Apps\ Mobile.svg);
+  }
+
+  .parallax-data-structures {
+    background-image: url(images/Parallax\ Background\ Data\ Structures\ Mobile.svg);
+  }
+
+  .parallax-data-science {
+    background-image: url(images/Parallax\ Background\ Data\ Science\ Mobile.svg);
+  }
+
+  .parallax-python {
+    background-image: url(images/Parallax\ Background\ Python\ Mobile.svg);
+  }
+
   #price-tables #plans .plan {
     width: 100%;
     margin: 0 2% 20px 0;
