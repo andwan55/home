@@ -1635,7 +1635,7 @@ footer p, footer a {
   Media queries
 ---------------------------------------------------------------*/
 
-@media handheld, only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   #top-header {
     padding: 15px 20px;
   }
@@ -1659,7 +1659,7 @@ footer p, footer a {
   }
 }
 
-@media handheld, only screen and (max-device-width: 767px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   #top-header {
     position: fixed;
     padding: 8px 0;
@@ -1799,7 +1799,7 @@ footer p, footer a {
   }
 }
 
-@media handheld, only screen and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   
   .header-carousel {
     height: 620px;
