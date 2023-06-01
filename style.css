@@ -1943,12 +1943,14 @@ footer p, footer a {
     width: 100%;
   }
 
-  .parallax-section .parallax1{
+  .parallax-section{
     background-image: url(images/Parallax\ Background\ Mobile.svg);
+    background-size: contain;
   }
 
   .parallax-research-program {
     background-image: url(images/Parallax\ Background\ Research\ Program\ Mobile.svg);
+    background-size: contain;
   }
 
   .parallax-ml-apps {
