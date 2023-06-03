@@ -2,13 +2,13 @@
 <g clip-path="url(#clip0_320_60)">
 <rect width="800" height="1100" fill="white"/>
 <rect width="800" height="1100" transform="matrix(1 0 0 -1 0 1100)" fill="url(#pattern0)"/>
-<rect x="164" y="220" width="332" height="502" fill="url(#pattern1)"/>
-<rect x="303" y="220" width="332" height="502" fill="url(#pattern2)"/>
-<mask id="mask0_320_60" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="133" y="242" width="533" height="535">
-<rect x="133" y="242.627" width="533" height="533.838" fill="url(#pattern3)"/>
+<rect x="230" y="173" width="239" height="361" fill="url(#pattern1)"/>
+<rect x="330" y="173" width="239" height="361" fill="url(#pattern2)"/>
+<mask id="mask0_320_60" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="208" y="189" width="384" height="384">
+<rect x="208" y="189.265" width="383.133" height="383.735" fill="url(#pattern3)"/>
 </mask>
 <g mask="url(#mask0_320_60)">
-<rect x="128.81" y="233.408" width="541.38" height="549.761" fill="url(#pattern4)" fill-opacity="0.8"/>
+<rect x="204.988" y="182.638" width="389.157" height="395.181" fill="url(#pattern4)" fill-opacity="0.8"/>
 </g>
 </g>
 <defs>
@@ -16,13 +16,13 @@
 <use xlink:href="#image0_320_60" transform="matrix(0.00196429 0 0 0.00142857 -1.38571 0)"/>
 </pattern>
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image1_320_60" transform="scale(0.00216007 0.00142857)"/>
+<use xlink:href="#image1_320_60" transform="matrix(0.00215983 0 0 0.00142991 0 -0.000469658)"/>
 </pattern>
 <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image1_320_60" transform="scale(0.00216007 0.00142857)"/>
+<use xlink:href="#image1_320_60" transform="matrix(0.00215983 0 0 0.00142991 0 -0.000469658)"/>
 </pattern>
 <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image2_320_60" transform="translate(-0.000663923) scale(0.000244525)"/>
+<use xlink:href="#image2_320_60" transform="translate(-0.00066395) scale(0.000244525)"/>
 </pattern>
 <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image3_320_60" transform="matrix(0.00215983 0 0 0.0021269 0 -0.243353)"/>
