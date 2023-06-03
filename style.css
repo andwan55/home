@@ -1765,28 +1765,40 @@ footer p, footer a {
     font-size: 2em;
   }
 
-  .parallax-section .parallax1{
+  .parallax-section{
     background-image: url(images/Parallax\ Background\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-research-program {
     background-image: url(images/Parallax\ Background\ Research\ Program\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-ml-apps {
     background-image: url(images/Parallax\ Background\ ML\ Apps\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-data-structures {
     background-image: url(images/Parallax\ Background\ Data\ Structures\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-data-science {
     background-image: url(images/Parallax\ Background\ Data\ Science\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-python {
     background-image: url(images/Parallax\ Background\ Python\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   #price-tables #plans .plan {
@@ -1945,28 +1957,38 @@ footer p, footer a {
 
   .parallax-section{
     background-image: url(images/Parallax\ Background\ Mobile.svg);
-    background-size: contain;
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-research-program {
     background-image: url(images/Parallax\ Background\ Research\ Program\ Mobile.svg);
-    background-size: contain;
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-ml-apps {
     background-image: url(images/Parallax\ Background\ ML\ Apps\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-data-structures {
     background-image: url(images/Parallax\ Background\ Data\ Structures\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-data-science {
     background-image: url(images/Parallax\ Background\ Data\ Science\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-python {
     background-image: url(images/Parallax\ Background\ Python\ Mobile.svg);
+    background-size: auto;
+    background-position: top;
   }
 
   .parallax-section .wrap {
