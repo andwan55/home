@@ -1,139 +1,140 @@
-$(document).ready(function() { 
-  /*(function($) {
-   
-      $.fn.parallax = function(options) {
-   
-          var windowHeight = $(window).height();
-   
-          // Establish default settings
-          var settings = $.extend({
-              speed        : 0.15
-          }, options);
-   
-          // Iterate over each object in collection
-          return this.each( function() {
-   
-            // Save a reference to the element
-            var $this = $(this);
-   
-            // Set up Scroll Handler
-            $(document).scroll(function(){
-   
-                  var scrollTop = $(window).scrollTop();
-                        var offset = $this.offset().top;
-                        var height = $this.outerHeight();
-   
-            // Check if above or below viewport
-        if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-          return;
-        }
-   
-        var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-   
-                          // Apply the Y Background Position to Set the Parallax Effect
-            $this.css('background-position', 'center ' + yBgPosition + 'px');
-                  
-            });
-          });
-      }
-  }(jQuery)); */
+$(document).ready(function() {
 
-//Loader
-$(window).load(function() {
-	$(".loader-overlay").fadeOut("slow");
-})
+	(function($) {
+	
+		$.fn.parallax = function(options) {
+	
+			var windowHeight = $(window).height();
+	
+			// Establish default settings
+			var settings = $.extend({
+				speed        : 0.15
+			}, options);
+	
+			// Iterate over each object in collection
+			return this.each( function() {
+	
+				// Save a reference to the element
+				var $this = $(this);
+	
+				// Set up Scroll Handler
+				$(document).scroll(function(){
+	
+					var scrollTop = $(window).scrollTop();
+							var offset = $this.offset().top;
+							var height = $this.outerHeight();
+	
+				// Check if above or below viewport
+			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+			return;
+			}
+	
+			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+	
+							// Apply the Y Background Position to Set the Parallax Effect
+				$this.css('background-position', 'center ' + yBgPosition + 'px');
+					
+				});
+			});
+		}
+	}(jQuery));
 
-//Counter
-$('.counter').counterUp({
-    delay: 10,
-    time: 1000
-});
+	//Loader
+	$(window).load(function() {
+		$(".loader-overlay").fadeOut("slow");
+	})
 
-$('a[data-rel^=lightcase]').lightcase();
+	//Counter
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1000
+	});
 
-// Instantiate MixItUp
-  $('.portfolio-items').mixItUp({
-       animation: {
-          duration: 300
-      }
-  });
+	$('a[data-rel^=lightcase]').lightcase();
 
-// Carousels   
-  $('.cl-client-carousel').owlCarousel({
-      pagination:true,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      autoPlay:true,
-  }); 
-  
-  $('.cl-logo-carousel').owlCarousel({
-	  items : 6,
-      itemsDesktop : [1199,5],
-      itemsDesktopSmall : [979,3],
-      stopOnHover:true,
-      autoPlay:3000,
-  });
+	// Instantiate MixItUp
+	$('.portfolio-items').mixItUp({
+		animation: {
+			duration: 300
+		}
+	});
 
-    $(".header-carousel").owlCarousel({
-        pagination:true,
-        navigation : true, // Show next and prev buttons
-        slideSpeed : 500,
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay:true,
-    });
+	// Carousels   
+	$('.cl-client-carousel').owlCarousel({
+		pagination:true,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true,
+		autoPlay:true,
+	}); 
 
-// Parallax
-/* $('.parallax-section').parallax({
-          speed : .100
-}); */
+	$('.cl-logo-carousel').owlCarousel({
+		items : 6,
+		itemsDesktop : [1199,5],
+		itemsDesktopSmall : [979,3],
+		stopOnHover:true,
+		autoPlay:3000,
+	});
 
-// Header Changer on Scroll
-$(function() {
-    //caches a jQuery object containing the header element
-    var header = $(".header-home");
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+	$(".header-carousel").owlCarousel({
+		pagination:true,
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 500,
+		paginationSpeed : 500,
+		singleItem:true,
+		autoPlay:true,
+	});
 
-        if (scroll >= 100) {
-            header.removeClass('header-home').addClass("header-default");
-        } else {
-            header.removeClass("header-default").addClass('header-home');
-        }
-    });
-});
+	// Parallax
+	$('.parallax-section').parallax({
+			speed : .100
+			});
 
-// Navigation
-  $('.nav-container').onePageNav({
-    scrollSpeed: 600,
-    currentClass: 'current',
-    changeHash: true,
-    filter: ':not(.external)'
-  });
+	// Header Changer on Scroll
+	$(function() {
+		//caches a jQuery object containing the header element
+		var header = $(".header-home");
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
 
-//Header Class Change on Resize
-  var $window = $(window);
+			if (scroll >= 100) {
+				header.removeClass('header-home').addClass("header-default");
+			} else {
+				header.removeClass("header-default").addClass('header-home');
+			}
+		});
+	});
 
-      // Function to handle changes to style classes based on window width
-      function checkWidth() {
-      if ($window.width() < 767) {
-          $('#top-header').removeClass('header-home').addClass('header-default');
-          };
+	// Navigation
+	$('.nav-container').onePageNav({
+	scrollSpeed: 600,
+	currentClass: 'current',
+	changeHash: true,
+	filter: ':not(.external)'
+	});
 
-      if ($window.width() >= 767) {
-          $('#top-header').removeClass('header-default').addClass('header-home');
-      }
-  }
+	//Header Class Change on Resize
+	var $window = $(window);
 
-  // Execute on load
-  checkWidth();
+		// Function to handle changes to style classes based on window width
+		function checkWidth() {
+		if ($window.width() < 767) {
+			$('#top-header').removeClass('header-home').addClass('header-default');
+			};
 
-  // Bind event listener
-      $(window).resize(checkWidth);
+		if ($window.width() >= 767) {
+			$('#top-header').removeClass('header-default').addClass('header-home');
+		}
+	}
 
-//Google Map
-//set your google maps parameters
+	// Execute on load
+	checkWidth();
+
+	// Bind event listener
+	$(window).resize(checkWidth);
+
+	//Google Map
+	//set your google maps parameters
 	var $latitude = 45.537383,
 		$longitude = -73.597623,
 		$map_zoom = 14;
@@ -156,7 +157,7 @@ $(function() {
 				{saturation: $saturation}
 			]
 		},  
-	    {	//poi stands for point of interest - don't show these lables on the map 
+		{	//poi stands for point of interest - don't show these lables on the map 
 			featureType: "poi",
 			elementType: "labels",
 			stylers: [
@@ -165,12 +166,12 @@ $(function() {
 		},
 		{
 			//don't show highways lables on the map
-	        featureType: 'road.highway',
-	        elementType: 'labels',
-	        stylers: [
-	            {visibility: "off"}
-	        ]
-	    }, 
+			featureType: 'road.highway',
+			elementType: 'labels',
+			stylers: [
+				{visibility: "off"}
+			]
+		}, 
 		{ 	
 			//don't show local road lables on the map
 			featureType: "road.local", 
@@ -320,47 +321,47 @@ $(function() {
 		
 	//set google map options
 	var map_options = {
-      	center: new google.maps.LatLng($latitude, $longitude),
-      	zoom: $map_zoom,
-      	panControl: false,
-      	zoomControl: false,
-      	mapTypeControl: false,
-      	streetViewControl: false,
-      	mapTypeId: google.maps.MapTypeId.ROADMAP,
-      	scrollwheel: false,
-      	styles: style,
-    }
-    //inizialize the map
+		center: new google.maps.LatLng($latitude, $longitude),
+		zoom: $map_zoom,
+		panControl: false,
+		zoomControl: false,
+		mapTypeControl: false,
+		streetViewControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		scrollwheel: false,
+		styles: style,
+	}
+	//inizialize the map
 	var map = new google.maps.Map(document.getElementById('google-container'), map_options);
 	//add a custom marker to the map				
 	var marker = new google.maps.Marker({
-	  	position: new google.maps.LatLng($latitude, $longitude),
-	    map: map,
-	    visible: true,
-	 	icon: $marker_url,
+		position: new google.maps.LatLng($latitude, $longitude),
+		map: map,
+		visible: true,
+		icon: $marker_url,
 	});
 
 	//add custom buttons for the zoom-in/zoom-out on the map
 	function CustomZoomControl(controlDiv, map) {
 		//grap the zoom elements from the DOM and insert them in the map 
-	  	var controlUIzoomIn= document.getElementById('cd-zoom-in'),
-	  		controlUIzoomOut= document.getElementById('cd-zoom-out');
-	  	controlDiv.appendChild(controlUIzoomIn);
-	  	controlDiv.appendChild(controlUIzoomOut);
+		var controlUIzoomIn= document.getElementById('cd-zoom-in'),
+			controlUIzoomOut= document.getElementById('cd-zoom-out');
+		controlDiv.appendChild(controlUIzoomIn);
+		controlDiv.appendChild(controlUIzoomOut);
 
 		// Setup the click event listeners and zoom-in or out according to the clicked element
 		google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
-		    map.setZoom(map.getZoom()+1)
+			map.setZoom(map.getZoom()+1)
 		});
 		google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
-		    map.setZoom(map.getZoom()-1)
+			map.setZoom(map.getZoom()-1)
 		});
 	}
 
 	var zoomControlDiv = document.createElement('div');
- 	var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+	var zoomControl = new CustomZoomControl(zoomControlDiv, map);
 
-  	//insert the zoom div on the top left of the map
-  	map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
+	//insert the zoom div on the top left of the map
+	map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
 
 });
