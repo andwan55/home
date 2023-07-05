@@ -1,9 +1,3 @@
-/*
-	The7 by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 $(document).ready(function() { 
   /*(function($) {
    
@@ -91,9 +85,9 @@ $('a[data-rel^=lightcase]').lightcase();
     });
 
 // Parallax
-$('.parallax-section').parallax({
+/* $('.parallax-section').parallax({
           speed : .100
-        });
+}); */
 
 // Header Changer on Scroll
 $(function() {
