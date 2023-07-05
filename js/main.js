@@ -4,15 +4,8 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
-$(document).ready(function() {
-
-  /**
-   * Author: Heather Corey
-   * jQuery Simple Parallax Plugin
-   *
-   */
-   
-  (function($) {
+$(document).ready(function() { 
+  /*(function($) {
    
       $.fn.parallax = function(options) {
    
@@ -49,7 +42,7 @@ $(document).ready(function() {
             });
           });
       }
-  }(jQuery));
+  }(jQuery)); */
 
 //Loader
 $(window).load(function() {
