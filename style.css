@@ -511,7 +511,7 @@ blockquote p {
 .parallax-section {
   z-index: -1;
   clear: both;
-  background-image: url('images/Parallax\ Background.svg');
+  background-image: url(images/Parallax\ Background.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -523,23 +523,23 @@ blockquote p {
 }
 
 .parallax-research-program {
-  background-image: url(images/Parallax\ Background\ Research\ Program.svg);
+  background-image: url(images/Parallax\ Background\ Research\ Program.jpg);
 }
 
 .parallax-ml-apps {
-  background-image: url(images/Parallax\ Background\ ML\ Apps.svg);
+  background-image: url(images/Parallax\ Background\ ML\ Apps.jpg);
 }
 
 .parallax-data-structures {
-  background-image: url(images/Parallax\ Background\ Data\ Structures.svg);
+  background-image: url(images/Parallax\ Background\ Data\ Structures.jpg);
 }
 
 .parallax-data-science {
-  background-image: url(images/Parallax\ Background\ Data\ Science.svg);
+  background-image: url(images/Parallax\ Background\ Data\ Science.jpg);
 }
 
 .parallax-python {
-  background-image: url(images/Parallax\ Background\ Python.svg);
+  background-image: url(images/Parallax\ Background\ Python.jpg);
 }
 
 .parallax-section .content, .top-slider .content-header, .home-slider {
