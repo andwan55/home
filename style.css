@@ -1486,12 +1486,6 @@ footer p, footer a {
   position: relative;
   display: table;
   margin: 0 auto;
-  background: #fff;
-}
-
-.staff-img {
-  position: relative;
-  display: table;
   width: 100%;
 }
 
@@ -1562,6 +1556,22 @@ footer p, footer a {
 .staff-content:hover .team-social {
   opacity: 1;
   transform: translateY(0);
+}
+
+.speaker-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.speaker-img img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  margin: 0 20px;
+  border-radius: 5px;
 }
 
 /* *********************************************************
