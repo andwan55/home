@@ -133,6 +133,41 @@ $(document).ready(function() {
 	// Bind event listener
 	$(window).resize(checkWidth);
 
+	// Collapsible Accordion code
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		content.style.maxHeight = null;
+		this.style.borderRadius = "30px";
+		} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+		this.style.borderRadius = "30px 30px 0 0";
+		}
+	});
+	}
+
+	var open = document.getElementsByClassName("opened");
+	var j;
+
+	for (j = 0; j < open.length; j++) {
+	open[j].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+			content.style.maxHeight = content.scrollHeight + "px";
+			this.style.borderRadius = "30px 30px 0 0";
+		} else {
+		content.style.maxHeight = null;
+		this.style.borderRadius = "30px";
+		}
+	});
+	}
+
 	//Google Map
 	//set your google maps parameters
 	var $latitude = 45.537383,
