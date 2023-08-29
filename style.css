@@ -977,6 +977,14 @@ blockquote p {
   width: 100%;
 }
 
+.post-wrap .post-top {
+  width: 50%;
+  /*border-radius*/
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
 .post-wrap .post-meta {
   font-size: .8em;
   margin-bottom: 1.5em;
