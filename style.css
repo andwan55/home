@@ -103,7 +103,7 @@ h3 {
 
 h4,h5,h6 {
   font-size: 1.125em;
-  line-height: .5em;
+  line-height: 0.5em;
 }
 
 .text-header{
@@ -190,7 +190,7 @@ blockquote p {
           animation: rubberBand .8s 1;
 }
 
-.collapsible, .opened {
+.collapsible {
   position: relative;
   width: 80%;
   font-size: 1.125em;
@@ -920,7 +920,7 @@ blockquote p {
 /* *********************************************************
   Quotes Section 
 ********************************************************* */
-.quotes-icon {
+.quotes-icon, .news-icon {
   color: #1abc9c;
   font-size: 4em;
   line-height: 1;
@@ -946,6 +946,10 @@ blockquote p {
      -moz-border-radius: 20px;
           border-radius: 20px;
   background: #fff;
+}
+
+.slide-logo {
+  max-width: 100px;
 }
 
 /* *********************************************************
